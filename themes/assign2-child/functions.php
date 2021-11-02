@@ -27,3 +27,6 @@ function assign2child_wp_enqueue_scripts() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'assign2child_wp_enqueue_scripts' );
+
+
+// /
