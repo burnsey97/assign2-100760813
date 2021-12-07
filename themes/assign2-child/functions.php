@@ -27,6 +27,7 @@ function assign2child_wp_enqueue_scripts() {
     );
     wp_enqueue_style( 
         'zachstyle-style', 
+        // Calling My Custom Css
         get_stylesheet_directory_uri() . '/assests/css/zachstyle.css'
     );
 }
