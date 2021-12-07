@@ -9,7 +9,7 @@
  * @since Twenty Twenty-One 1.0
  */
 
-
+// new site logo
 function assign2child_wp_enqueue_scripts() {
     $parenthandle = 'twentytwentyone-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
     $theme = wp_get_theme();

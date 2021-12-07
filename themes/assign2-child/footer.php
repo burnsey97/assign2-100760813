@@ -42,6 +42,7 @@ if (is_page_template( 'templates/contact-template.php' )  ) {
 		<?php
 		// the_post_thumbnail();
 		// created custom blog loop
+		
 		the_excerpt();
 	}
 }

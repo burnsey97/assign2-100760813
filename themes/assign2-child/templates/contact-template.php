@@ -24,7 +24,7 @@ while ( have_posts() ) :
 
 // This is the first created Template page
 
-
+//
 endwhile; 
 
 ?>
