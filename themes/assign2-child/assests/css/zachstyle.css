@@ -96,3 +96,22 @@ td {
     font-family: Helvetica-light;
 }
 
+.has-large-font-size {
+    color: red;
+    text-align: center;
+    text-shadow: white 1px 1px 3px;
+    font-size: 25px;
+}
+.blocks-gallery-item {
+    border: solid red 1px;
+    padding: 5px;
+    width: 100%;
+}
+
+h5 {
+    color: red;
+    font-family: Helvetica-light;
+    font-weight: 100;
+    font-size: 30px;
+}
+
