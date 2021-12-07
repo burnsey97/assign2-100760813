@@ -22,6 +22,7 @@ while ( have_posts() ) :
 	if ( comments_open() || get_comments_number() ) 
 		comments_template();
 
+// This is the first created Template page
 
 
 endwhile; 
