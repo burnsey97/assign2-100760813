@@ -35,6 +35,7 @@ if (is_page_template( 'templates/contact-template.php' )  ) {
 	while ($test_query->have_posts()) {
 		$test_query->the_post();	
 		?>
+		<!-- // Create Custome Html  -->
 		<h3 id="blog-sample"> See a Blog Sample ⇣ </h3>
 		<h5><a class="entry-title"href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h5>
 		<img><a class="custom-blog-image" href="<?php the_permalink(); ?>"> <?php the_post_thumbnail(); ?> </a> </img>
