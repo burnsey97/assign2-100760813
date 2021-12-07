@@ -25,6 +25,10 @@ function assign2child_wp_enqueue_scripts() {
         array( $parenthandle ),
         $theme->get('Version') // this only works if you have Version in the style header
     );
+    wp_enqueue_style( 
+        'zachstyle-style', 
+        get_stylesheet_directory_uri() . '/assests/css/zachstyle.css'
+    );
 }
 add_action( 'wp_enqueue_scripts', 'assign2child_wp_enqueue_scripts' );
 
