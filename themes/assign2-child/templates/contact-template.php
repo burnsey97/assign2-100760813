@@ -26,7 +26,11 @@ while ( have_posts() ) :
 
 
 endwhile; 
+
 ?>
-<div>
+
 </main>
+
+<div>
+
 <?php get_footer(); ?>

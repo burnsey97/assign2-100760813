@@ -7,12 +7,26 @@ main {
 #knifeImg {
     background-image: url(../../template-parts/knife.png);
     width: 25%;
-    height: 100px;
+    height: 140px;
     background-size: auto;
     margin: auto;
+    animation-name: knifeSpin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
-.entry-header {
+@keyframes knifeSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.entry-title {
     color: red;
 }
 
@@ -44,8 +58,10 @@ main {
 
 }
 .entry-title {
-    font-size: 30px;
+    font-size: 20px;
     font-family: Helvetica;
+    text-align: center;
+    color: red;
 }
 
 .wp-block-quote {
@@ -115,3 +131,18 @@ h5 {
     font-size: 30px;
 }
 
+
+
+.attachment-post-thumbnail {
+    margin: auto;
+}
+.wp-post-image {
+    margin: auto;
+}
+#blog-sample {
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial-bold;
+text-shadow: white 1px 1px 20px ;
+    color: red;
+}

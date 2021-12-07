@@ -20,6 +20,34 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
+<?php
+if (is_page_template( 'templates/contact-template.php' )  ) {
+	$test_args = array (
+		'post_type'      => 'post',
+		'post_status'    => 'publish',
+		'posts_per_page' =>  3, 
+	);
+	
+	$test_query = new WP_Query( $test_args );
+
+
+	if( $test_query->have_posts() ) {
+	while ($test_query->have_posts()) {
+		$test_query->the_post();	
+		?>
+		<h3 id="blog-sample"> See a Blog Sample ⇣ </h3>
+		<h5><a class="entry-title"href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h5>
+		<img><a class="custom-blog-image" href="<?php the_permalink(); ?>"> <?php the_post_thumbnail(); ?> </a> </img>
+		
+		<?php
+		// the_post_thumbnail();
+
+		the_excerpt();
+	}
+}
+}
+?>
+
 		<?php if ( has_nav_menu( 'footer' ) ) : ?>
 			<nav aria-label="<?php esc_attr_e( 'Secondary menu', 'twentytwentyone' ); ?>" class="footer-navigation">
 				<ul class="footer-navigation-wrapper">
